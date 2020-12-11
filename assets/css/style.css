@@ -19,10 +19,10 @@
 }
 
 .hs img{
-  width:auto;
-  height:auto;
+  height:100%;
   max-width:500px;
 }
+
 .hs > li,
 .item {
   scroll-snap-align: center;
