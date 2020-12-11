@@ -19,8 +19,8 @@
 }
 
 .hs img{
-  height:100%;
-  max-width:500px;
+  width:auto;
+  height:500px;
 }
 
 .hs > li,
