@@ -460,8 +460,7 @@ magnify("myimage", 16);
   previous section details how a Convolutional Neural Network is used to
   estimate an individual’s apparent age based on their obituary photographs.
   When the database is sorted according to these estimates, the youngest-looking
-  photographs are brought to the top of the list. We can then look at these
-  images and determine whether or not the recruit in question is underage.
+  photographs are brought to the top of the list. Below are some of the images brought to the top of the dataset (scroll left/right):
 </p>
 <p></p>		
 	</div>				
@@ -479,7 +478,8 @@ magnify("myimage", 16);
 		</ul>
 	<div class="article--center">						
 <p>
-  Though some of the individuals in the images are clearly under the age of 18,
+  
+ Though some of the individuals in the images are clearly under the age of 18,
   borderline cases are harder to assess.
 </p>
 <p></p>
@@ -501,7 +501,7 @@ magnify("myimage", 16);
 <p>
   Before focusing on children, let’s have a look at the general geographic
   distribution of PKK recruits’ birthplaces. This is presented in the
-  interactive heatmap below. Zooming in gradually overlays a satellite basemap.
+  interactive heatmap below, which can be toggled to restrict the sample to adults or children. Zooming in gradually overlays a satellite basemap.
 </p>
 <p></p>
 </div>
@@ -517,7 +517,7 @@ magnify("myimage", 16);
         <div class='session'>
         <div class='row' id='buttons'>
           <input id='all' type='radio' name='toggle' value='0' checked='checked'>
-          <label for='all'>All</label>
+          <label for='all'>Adults</label>
           <input id='weekday' type='radio' name='toggle' value='1'>
           <label for='weekday'>Children</label>
       </div>
@@ -584,13 +584,7 @@ map.setFilter('recruits',Filter)
 <p></p>
 <p>
   Restricting the heatmap to only include children shows hotspots in Istanbul,
-  Diyarbakir, and Van:
-</p>
-<p></p>
-<p>map_2</p>
-<p></p>
-<p>
-  Though the recruitment of child soldiers is often thought to be a mainly rural
+  Diyarbakir, and Van. Though the recruitment of child soldiers is often thought to be a mainly rural
   phenomenon, the proportion of urban recruits is higher for children than it is
   for the whole sample. If we zoom into Istanbul, we see that all of the
   underage recruits are closely clustered across a few neighborhoods in the West
