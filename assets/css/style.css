@@ -64,6 +64,57 @@
 	opacity:0
 }
 
+/* Mapbox styling*/
+
+.mapbox {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+
+.mapbox #map {
+  position: relative;
+  height: 600px;
+  width:100%;
+}
+
+.mapbox h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.mapbox h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.mapbox a {
+  text-decoration: none;
+  color: #2dc4b2;
+}
+
+.mapbox #console {
+  position: absolute;
+  top:30px;
+  width: 180px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.mapbox session {
+  margin-bottom: 20px;
+}
+
+.mapbox row {
+  height: 12px;
+  width: 100%;
+}
+
+
+
+
 /* misc */
 * {
   margin: 0;
