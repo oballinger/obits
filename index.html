@@ -505,12 +505,52 @@ magnify("myimage", 16);
 </p>
 <p></p>
 </div>
- <div>
-        <iframe
-          src='https://api.mapbox.com/styles/v1/oballinger/ckhach7j44zgg19k6sn14u1n8.html?fresh=true&title=view&access_token=pk.eyJ1Ijoib2JhbGxpbmdlciIsImEiOiJjazdvbXFkMWEwYXVrM2ZtdHU0cTd0cG5hIn0.vIj9s8F6M49ZP5DAh9Kd3Q' width='100%' height='700px'>
-        </iframe>  
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoib2JhbGxpbmdlciIsImEiOiJjazdvbXFkMWEwYXVrM2ZtdHU0cTd0cG5hIn0.vIj9s8F6M49ZP5DAh9Kd3Q';
+
+var map = new mapboxgl.Map({
+  id: 'recruits',
+  container: 'map', // container element id
+  style: 'mapbox://styles/oballinger/ckhach7j44zgg19k6sn14u1n8',
+  center: [ 35.2433, 38.9637], // initial map center in [lon, lat]
+  zoom: 5
+});
+
+document.getElementById('buttons').addEventListener('change', 
+ function(e) {
+ var hour = parseInt(e.target.value);
+  // update the map
+ var Filter=[
+    "all",
+    [">", ["get", "score"], 60],
+    ['==', ['get', 'child'], hour]
+]
+ 
+map.setFilter('recruits',Filter) 
+});	
+</script>		
+		
+<div class='mapbox'>
+  <title>PKK Recruitment Heatmap</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet'/>
+  
+  <div id='map'></div>
+    <div id='console'>
+      <h1>PKK Recruitment</h1>
+        <div class='session'>
+        <div class='row' id='buttons'>
+          <input id='all' type='radio' name='toggle' value='0' checked='checked'>
+          <label for='all'>All</label>
+          <input id='weekday' type='radio' name='toggle' value='1'>
+          <label for='weekday'>Children</label>
       </div>
-    <div class="article--center">
+    </div>
+  </div>
+</div>		
+ 
+<div class="article--center">
 <p></p>
 <p>
   This heatmap highlights a number of important spatial trends. Though the PKK
