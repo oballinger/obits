@@ -505,7 +505,26 @@ magnify("myimage", 16);
 </p>
 <p></p>
 </div>
-
+		
+<div class='mapbox'>
+  <title>PKK Recruitment Heatmap</title>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet'/>
+  
+  <div id='map'></div>
+    <div id='console'>
+      <h1>PKK Recruitment</h1>
+        <div class='session'>
+        <div class='row' id='buttons'>
+          <input id='all' type='radio' name='toggle' value='0' checked='checked'>
+          <label for='all'>All</label>
+          <input id='weekday' type='radio' name='toggle' value='1'>
+          <label for='weekday'>Children</label>
+      </div>
+    </div>
+  </div>
+</div>	
+		
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoib2JhbGxpbmdlciIsImEiOiJjazdvbXFkMWEwYXVrM2ZtdHU0cTd0cG5hIn0.vIj9s8F6M49ZP5DAh9Kd3Q';
 
@@ -531,25 +550,6 @@ map.setFilter('recruits',Filter)
 });	
 </script>		
 		
-<div class='mapbox'>
-  <title>PKK Recruitment Heatmap</title>
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet'/>
-  
-  <div id='map'></div>
-    <div id='console'>
-      <h1>PKK Recruitment</h1>
-        <div class='session'>
-        <div class='row' id='buttons'>
-          <input id='all' type='radio' name='toggle' value='0' checked='checked'>
-          <label for='all'>All</label>
-          <input id='weekday' type='radio' name='toggle' value='1'>
-          <label for='weekday'>Children</label>
-      </div>
-    </div>
-  </div>
-</div>		
- 
 <div class="article--center">
 <p></p>
 <p>
