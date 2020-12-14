@@ -73,7 +73,7 @@
 }
 
 .mapbox #map {
-  position: relative;
+  position: absolute;
   height: 600px;
   width:100%;
 }
@@ -98,7 +98,6 @@
   grid-column: 1;
   grid-row: 1;
   position:relative;
-  top:120px;
   width: 180px;
   margin: 10px;
   padding: 10px 20px;
@@ -113,7 +112,6 @@
   height: 12px;
   width: 100%;
 }
-
 
 
 /* misc */
