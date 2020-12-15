@@ -55,6 +55,20 @@ function magnify(imgID, zoom) {
 }
 </script>
 
+<script>
+const checkpoint = 10;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= checkpoint) {
+    opacity = 0 + currentScroll / checkpoint;
+  } else {
+    opacity = 1;
+  }
+  document.querySelector(".top").style.opacity = opacity;
+});
+</script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -75,28 +89,6 @@ function magnify(imgID, zoom) {
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Ollie Ballinger - Spotting Child Soldiers in Kurdistan </title>
   </head>
-
-  <body>
-<script>
-const checkpoint = 10;
-
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
-    opacity = 0 + currentScroll / checkpoint;
-  } else {
-    opacity = 1;
-  }
-  document.querySelector(".top").style.opacity = opacity;
-});
-</script>
-<div class="img-wrapper">
-	<img class="bottom" src="assets/img/6716_sehit_cicek51.jpg">
-	<img id="myimage" class="top" src="assets/img/mosaic_5.jpg">	
-	<script>
-		magnify("myimage", 15);
-	</script>
-</div>
 	
     <!-- NAVIGATION -->
     
@@ -121,9 +113,16 @@ window.addEventListener("scroll", () => {
 	  -->
 
     <!-- MAIN CONTENT -->
-    <main>
+<body>
+<main>
       <article>
-        <!-- HEADER -->
+		<div class="img-wrapper">
+			<img class="bottom" src="assets/img/6716_sehit_cicek51.jpg">
+			<img id="myimage" class="top" src="assets/img/mosaic_5.jpg">	
+			<script>
+				magnify("myimage", 15);
+			</script>
+		</div>
         <header>
           
 	<h1><em>Spotting Child Soldiers in Kurdistan</em></h1>
