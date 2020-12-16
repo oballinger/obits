@@ -1,5 +1,4 @@
 <script>
-document.addEventListener("DOMContentLoaded",magnify())
 function magnify(imgID, zoom) {
   var img, glass, w, h, bw;
   img = document.getElementById(imgID);
@@ -121,7 +120,7 @@ window.addEventListener("scroll", () => {
 			<img class="bottom" src="assets/img/6716_sehit_cicek51.jpg">
 			<img id="myimage" class="top" src="assets/img/mosaic_5.jpg">	
 			<script>
-				 document.addEventListener("DOMContentLoaded", magnify("myimage", 15))
+				 magnify("myimage", 15)
 			</script>
 		</div>
         <header>
@@ -226,10 +225,9 @@ window.addEventListener("scroll", () => {
 <p></p>
 <p>
   This process yields a database of 3,664 PKK individual recruits who were
-  killed between 2001 and 2020. The database contains a significant amount of
+  killed between 2001 and 2020, as well as nearly 20,000 accompanying images. The database contains a significant amount of
   information on each recruit, including their name, address, and dates and
-  locations of birth, recruitment, and death. The images accompanying each
-  obituary are
+  locations of birth, recruitment, and death. 
 </p>
 <p></p>
 <p>
@@ -238,7 +236,7 @@ window.addEventListener("scroll", () => {
   investigation of child recruitment patterns over time. Using open source tools
   and data, I was able to document 278 confirmed cases of child recruitment by
   the PKK, and a further 300 likely cases. Most of them were recruited from
-  three cities: Istanbul, Diyarbakir, and Van. 40% of them are female. Between
+  three cities: Istanbul, Diyarbakir, and Van. 58% of them are female. Between
   1993 and 1996, there were more children being recruited to the PKK than adults
   each year.
 </p>
