@@ -55,6 +55,8 @@ function magnify(imgID, zoom) {
 }
 </script>
 
+
+<!-- Scroll Opacity trigger
 <script>
 const checkpoint = 10;
 
@@ -68,6 +70,8 @@ window.addEventListener("scroll", () => {
   document.querySelector(".top").style.opacity = opacity;
 });
 </script>
+-->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -116,6 +120,13 @@ window.addEventListener("scroll", () => {
 <body>
 <main>
       <article>
+	      <div class="img-magnifier-container">
+	      <img id="myimage" src="assets/img/mosaic_5.jpg">	
+		<script>
+			 magnify("myimage", 15)
+		</script>
+		</div>
+	      <!-- scroll fade between images 
 		<div class="img-wrapper">
 			<img class="bottom" src="assets/img/6716_sehit_cicek51.jpg">
 			<img id="myimage" class="top" src="assets/img/mosaic_5.jpg">	
@@ -123,6 +134,7 @@ window.addEventListener("scroll", () => {
 				 magnify("myimage", 15)
 			</script>
 		</div>
+		-->
         <header>
           
 	<h1><em>Spotting Child Soldiers in Kurdistan</em></h1>
