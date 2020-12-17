@@ -35,7 +35,9 @@
 
 /* magnifying glass */
 
-
+.img-magnifier-container{
+  position: relative;
+}
 
 .img-magnifier-glass {
   position: absolute;
