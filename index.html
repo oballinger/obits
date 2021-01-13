@@ -55,24 +55,6 @@ function magnify(imgID, zoom) {
 }
 </script>
 
-
-<!-- Scroll Opacity trigger
-<script>
-const checkpoint = 10;
-
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll <= checkpoint) {
-    opacity = 0 + currentScroll / checkpoint;
-  } else {
-    opacity = 1;
-  }
-  document.querySelector(".top").style.opacity = opacity;
-});
-</script>
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -91,7 +73,7 @@ window.addEventListener("scroll", () => {
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
       integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ollie Ballinger - Spotting Child Soldiers in Kurdistan </title>
+    <title>Ollie Ballinger - Identifying Child Soldiers in Kurdistan </title>
   </head>
 	
     <!-- NAVIGATION -->
@@ -120,37 +102,17 @@ window.addEventListener("scroll", () => {
 <body>
 <main>
       <article>
-	      <!-- scroll fade between images 
-		<div class="img-wrapper">
-			<img class="bottom" src="assets/img/6716_sehit_cicek51.jpg">
-			<img id="myimage" class="top" src="assets/img/mosaic_5.jpg">	
+		<div class="img-magnifier-container">
+			<img id="myimage" src="assets/img/mosaic_5.jpg">	
 			<script>
 				 magnify("myimage", 15)
 			</script>
 		</div>
-		-->
         <header>
-          <div class="img-magnifier-container">
-		<img id="myimage" src="assets/img/mosaic_5.jpg">	
-	</div>
-	<script>
-	 magnify("myimage", 15)
-	</script>
-	<h1><em>Spotting Child Soldiers in Kurdistan</em></h1>
+          
+	<h1><em>Identifying Child Soldiers in Kurdistan</em></h1>
         </header>
-        <!-- SECTION ABOUT -->
-        <div class="article__about">
-          <p>By <a href="#">Ollie Ballinger</a></p>
-          <div class="article__about__details">
-            <p>December 10, 2020</p>
-            <ul class="social__list">
-              <li><a class="social__icons" href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a class="social__icons" href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a class="social__icons" href="#"><i class="fas fa-envelope"></i></a></li>
-              <li><a class="social__icons" href="#"><i class="fas fa-share"></i></a></li>
-            </ul>
-          </div>
-        </div>
+    
         <!-- SECTION CONTENT -->
         <div class="article__content">
           <div class="article--center">
