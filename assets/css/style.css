@@ -35,7 +35,7 @@
 
 /* magnifying glass */
 
-.img-magnifier-container{
+.img-magnifier-container {
   position: relative;
 }
 
@@ -45,26 +45,8 @@
   border-radius: 50%;
   cursor: none;
   /*Set the size of the magnifier glass:*/
-  width: 300px;
-  height: 300px;
-}
-
-.img-wrapper {
-  display: grid;
-}
-
-.img-wrapper img {
-  grid-column: 1;
-  grid-row: 1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--gray);
-  transition: opacity 0.1s;
-}
-
-.img-wrapper img.top{
-	opacity:0
+  width: 250px;
+  height: 250px;
 }
 
 /* Mapbox styling*/
@@ -130,7 +112,7 @@
 html {
   font-size: 62.5%;
   font-weight: 300;
-  font-family: nyt-imperial,georgia,'times new roman',times,serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
